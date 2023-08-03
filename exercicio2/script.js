@@ -1,4 +1,4 @@
-let nacionalidade = prompt("Digite aqui a nacionalidade").toLowerCase()
+/* let nacionalidade = prompt("Digite aqui a nacionalidade").toLowerCase()
 
 if(nacionalidade === "brasileira"){
     console.log("a pessoa é do Brasil!")
@@ -13,3 +13,31 @@ if(nacionalidade === "brasileira"){
 } else{
     console.log("nacionalidade não encontrada")
 }
+ */
+
+//Exercício 2
+let nacionalidade = prompt("Digite aqui a nacionalidade")
+
+const imprimirNacionalidade = () =>{
+    switch (nacionalidade.toLowerCase()) {
+        case "brasileira":
+          console.log("A pessoa é do Brasil!");
+          break;
+        case "argentina":
+          console.log("A pessoa é da Argentina!");
+          break;
+        case "uruguaia":
+          console.log("A pessoa é do Uruguai!");
+          break;
+        case "chilena":
+          console.log("A pessoa é do Chile!");
+          break;
+        case "colombiana":
+          console.log("A pessoa é da Colômbia!");
+          break;
+        default:
+          console.log("Nacionalidade não encontrada.");
+    }
+}
+
+imprimirNacionalidade()
